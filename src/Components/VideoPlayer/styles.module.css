@@ -1,0 +1,73 @@
+/* Estilos del video*/
+  
+.video {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* El wrapper se agrego para que el boton de player aparezca y desaparezca al bajar entre un video y otro y no se quede fijo*/
+
+.wrapper {
+  position: relative;
+}
+
+
+/* Estilos del boton play*/
+
+.player {
+  background-color: transparent;
+  background-image: url("assets/player.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  height: 62px;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  width: 62px;
+}
+
+  /* El estilo hidden se agrega para ocultar el boton de play al momento de reproducir el video */
+
+.hidden {
+  opacity: 0;
+}
+
+.actions {
+  position: absolute;
+  bottom: 120px;
+  right: 8px;
+  z-index: 1;
+}
+
+.action {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.user img:first-child {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+}
+
+.user img:last-child {
+  margin-top: -8px;
+}
